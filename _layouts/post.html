@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div class="container">
+            <div class="row main-blog">
+                <div class="col-lg-12">
+                    <br>
+                    <img class="img-responsive" src="{{page.abstract-image}}" alt="">
+                    <div class="row">
+                        <div class="col-md-2 blog-date">
+                            <p>
+                                <b>Publicado</b><br/>
+                                {% assign m = page.date | date: "%-m" %}
+                                {{ page.date | date: "%d" }}
+                                de
+                                {% case m %}
+                                  {% when '1' %}Janeiro
+                                  {% when '2' %}Fevereiro
+                                  {% when '3' %}Março
+                                  {% when '4' %}Abril
+                                  {% when '5' %}Maio
+                                  {% when '6' %}Junho
+                                  {% when '7' %}Julho
+                                  {% when '8' %}Agosto
+                                  {% when '9' %}Setembro
+                                  {% when '10' %}Outubro
+                                  {% when '11' %}Novembro
+                                  {% when '12' %}Dezembro
+                                {% endcase %} de
+                                {{ page.date | date: "%Y" }}
+
+                            </p>
+                        </div><!-- /col3 Blog Date -->
+                        <div class="col-md-10 blog-title">
+                            <h2>{{page.title}}</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-md-offset-2 blog-post">
+                        {{content}}
+                        <p>
+                            <tag>COMPARTILHE</tag>
+                        </p>
+						<p>
+                            <a class="icon" href="https://twitter.com/intent/tweet?text=Que%20interessante:%20{{site.url}}{{page.url}}" class="twitter-share-button">
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a class="icon" href="#" onclick="javascript:window.open('http://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}&title=Gostei%20desse%20post.%20Confira.');">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
