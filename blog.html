@@ -37,7 +37,7 @@ title: "Blog"
                 <img class="img-responsive" src="{{post.abstract-image}}" alt="">
                 <br/>
                 <div class="col-md-10 col-md-offset-2">
-                    {{post.content | truncate: 482}}
+                    {{ post.excerpt }}
                     <p><a href="{{post.url}}">Leia Mais...</a></p>
                 </div>
             </div>
