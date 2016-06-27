@@ -1,6 +1,8 @@
 ---
 layout: default
+title: "Blog"
 ---
+{% include post-date.html %}
 <div class="container">
     <div class="row main-blog">
         <div class="col-lg-12">
@@ -9,7 +11,24 @@ layout: default
                 <div class="col-md-2 blog-date">
                     <p>
                         <b>Publicado</b><br/>
-                        {{post.date | date: "%d %B, %Y"}}
+                        {% assign m = post.date | date: "%-m" %}
+                        {{ post.date | date: "%-d" }}
+                        de
+                        {% case m %}
+                          {% when '1' %}Janeiro
+                          {% when '2' %}Fevereiro
+                          {% when '3' %}Março
+                          {% when '4' %}Abril
+                          {% when '5' %}Maio
+                          {% when '6' %}Junho
+                          {% when '7' %}Julho
+                          {% when '8' %}Agosto
+                          {% when '9' %}Setembro
+                          {% when '10' %}Outubro
+                          {% when '11' %}Novembro
+                          {% when '12' %}Dezembro
+                        {% endcase %} de
+                        {{ post.date | date: "%Y" }}
                     </p>
                 </div>
                 <div class="col-md-9 blog-title">
@@ -17,7 +36,7 @@ layout: default
                 </div>
                 <img class="img-responsive" src="{{post.abstract-image}}" alt="">
                 <br/>
-                <div class="col-md-12">
+                <div class="col-md-10 col-md-offset-2">
                     {{post.content | truncate: 482}}
                     <p><a href="{{post.url}}">Leia Mais...</a></p>
                 </div>

@@ -46,6 +46,9 @@ a:before, a:after {
     -o-transition: color .1s ease-in, background .1s ease-in;
     transition: color .1s ease-in, background .1s ease-in
 }
+a.icon {
+    color:#7b7b7b;
+}
 hr {
     display: block;
     height: 1px;
