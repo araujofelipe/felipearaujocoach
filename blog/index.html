@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: blog
 title: "Blog"
 ---
 {% include post-date.html %}
 <div class="container">
     <div class="row main-blog">
         <div class="col-lg-12">
-            {% for post in site.posts %}
+            {% for post in  paginator.posts %}
             <div class="row">
                 <div class="col-md-2 blog-date">
                     <p>
@@ -44,4 +44,24 @@ title: "Blog"
             {% endfor %}	    	
         </div>
     </div>
+	<hr>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-5">
+				<p>
+					<tag>
+						<i class="icon-caret-left"></i> 
+						  {% if paginator.previous_page %}
+						    <a href="{{ paginator.previous_page_path }}">PÁGINA ANTERIOR</a>
+						  {% else %}
+						    PÁGINA ANTERIOR
+						  {% endif %} | 	
+						  {% if paginator.next_page %}
+							 <a href="{{ paginator.next_page_path }}">PRÓXIMA PÁGINA</a>
+						  {% else %}
+						  	PRÓXIMA PÁGINA
+						  {% endif %} <i class="icon-caret-right"></i>
+					</tag>
+				</p>
+		</div>
+	</div>
 </div>

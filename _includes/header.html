@@ -1,10 +1,41 @@
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-        <a class="navbar-brand" href="/"><b>Felipe Araújo Coach - Life Coaching & Empreendedorismo</b></a>
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><b>Felipe Araújo Coach</b></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+			{% if page.title == 'Principal' %}
+	        <li class="active"><a href="/">Principal</a></li>
+	        {% else %}
+	        <li><a href="/">Principal</a></li>
+	        {% endif%}
+		
+            {% if page.title == 'Life Coaching' %}
+            <li class="active"><a href="/life-coaching.html">Life Coaching</a></li>
+            {% else %}
+            <li><a href="/life-coaching.html">Life Coaching</a></li>
+            {% endif%}
+
+			{% if page.title == 'Empreendedorismo' %}
+            <li class="active"><a href="/empreendedorismo.html">Empreendedorismo</a></li>
+            {% else %}
+            <li><a href="/empreendedorismo.html">Empreendedorismo</a></li>
+            {% endif%}
+
+			{% if page.title == 'Blog' or page.layout == 'post' %}
+	        <li class="active"><a href="/blog">Blog</a></li>
+	        {% else %}
+	        <li><a href="/blog">Blog</a></li>
+	        {% endif%}
+
+          </ul>
         </div>
     </div>
 </div>

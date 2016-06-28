@@ -19,3 +19,8 @@ github_username:  araujofelipe
 
 # Build settings
 markdown: kramdown
+paginate: 1
+paginate_path: "/blog/page:num/"
+gems: 
+   - jekyll-paginate 
+
