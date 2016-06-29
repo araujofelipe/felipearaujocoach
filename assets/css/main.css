@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     line-height: 28px;
-    margin-bottom: 25px
+    margin-bottom: 10px
 }
 .centered {
     text-align: center
@@ -250,16 +250,6 @@ input[type=submit] {
     background: #fff;
     padding-top: 50px;
     padding-bottom: 0
-}
-#w1 i {
-    font-size: 70px;
-    color: #2f2f2f;
-    padding-bottom: 30px;
-    padding-left: 23px;
-    padding-right: 23px
-}
-#w1 i:hover {
-    color: #f1c40f
 }
 #w1 h1 {
     font-size: 90px
