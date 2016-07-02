@@ -170,13 +170,24 @@ input[type=submit] {
     font-weight: 100;
     letter-spacing: 2px
 }
-#about {
-    background: url(../img/about-bg.jpg) no-repeat center top;
+.about {
+   
+}
+.about h1 {
+    margin-top: 150px;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 100;
+    letter-spacing: 2px
+}
+
+.empreendedorismo {
+    background: url(../img/empreendedorismo-img.jpg) no-repeat center top;
     padding-top: 20px;
     background-attachment: relative;
     background-position: center center;
-    min-height: 450px;
     width: 100%;
+    min-height: 450px;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -186,12 +197,22 @@ input[type=submit] {
     -o-background-size: cover;
     background-size: cover
 }
-#about h1 {
-    margin-top: 150px;
-    color: #fff;
-    font-size: 55px;
-    font-weight: 100;
-    letter-spacing: 2px
+
+.life-coaching {
+    background: url(../img/life-coaching-img.jpg) no-repeat center top;
+    padding-top: 20px;
+    background-attachment: relative;
+    background-position: center center;
+    width: 100%;
+    min-height: 450px;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
 }
 #services {
     background: url(../img/services-bg.jpg) no-repeat center top;
