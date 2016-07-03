@@ -20,8 +20,6 @@ As nossas ações têm origem em nossa mente e se não mudarmos o que está em n
 
 Então, para **mudar um hábito**, é necessário mudar o que está dentro de nossa mente, atraves do que **sentimos**, **pensamos** e da forma como  **escolhemos agir** frente aos estímulos externos.
 
-Ah! E você sabe porque muitas vezes as emoções estão associadas com o coração ao invés do cérebro? Nos próximos post vou falar sobre isso.
-
 Nos vemos em breve.
 
 
