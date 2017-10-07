@@ -4,6 +4,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #555;
+    margin-bottom:-12px;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch
 }
@@ -123,11 +124,11 @@ input[type=submit] {
 }
 #headerwrap {
     background: url(../img/header-bg.jpg) no-repeat center top;
-    margin-top: 50px;
+    /*margin-top: 55px;*/
     padding-top: 20px;
     background-attachment: relative;
     background-position: center center;
-    min-height: 650px;
+    min-height: 705px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -137,6 +138,9 @@ input[type=submit] {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover
+}
+#headerwrap>.container {
+    padding-top: 100px;
 }
 #headerwrap h1 {
     margin-top: 70px;
@@ -594,9 +598,22 @@ p>tag {
 .pricing-option .pricing-signup:hover {
     background: #f39c12
 }
+.navbar {
+    min-height: 55px;
+}
 @media screen and (max-width: 400px) {
     #db .col-lg-2 {
         padding-left: 20%
+    }
+    #headerwrap {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #headerwrap>.container {
+        padding-top: 0;
+    }
+    #headerwrap>.container>div>h1 {
+        margin-top:40px;
     }
 }
 @media screen and (min-width: 401px) and (max-width: 700px) {
@@ -607,5 +624,9 @@ p>tag {
 @media screen and (min-width: 700px) and (max-width: 1100px) {
     #db .col-lg-2 {
         padding-left: 30%
+    }
+    #headerwrap {
+        margin-top: 0;
+        padding-top: 340px;
     }
 }
