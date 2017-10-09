@@ -604,6 +604,19 @@ p>tag {
 .navbar {
     min-height: 55px;
 }
+
+.carousel-indicators li { 
+    border: 1px solid #000;
+}
+.carousel-indicators .active {
+    background-color: #000;
+}
+.span-bold {
+    font-weight: 900;
+}
+.item {
+    min-height: 136px;
+}
 @media screen and (max-width: 400px) {
     #db .col-lg-2 {
         padding-left: 20%
