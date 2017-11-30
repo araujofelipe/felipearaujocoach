@@ -615,7 +615,7 @@ p>tag {
     font-weight: 900;
 }
 .item {
-    min-height: 136px;
+    min-height: 190px;
 }
 @media screen and (max-width: 400px) {
     #db .col-lg-2 {
