@@ -6,17 +6,51 @@ body {
     color: #555;
     margin-bottom:-12px;
     -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
 }
+
+body#sales-body {
+    background: #fff;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Raleway;
     font-weight: 300;
     color: #333
 }
+
+.site-content {
+    margin:0 96px 46px 96px;
+}
+
+h1 strong {
+    color:#800000;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+}
+
 p {
     line-height: 28px;
     margin-bottom: 10px
 }
+
+.sales {
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    color:#333;
+    line-height: 32px;
+    margin-bottom: 32px;
+}
+
+.destaque {
+    font-weight: 900;
+}
+
 .centered {
     text-align: center
 }
