@@ -11,6 +11,20 @@ body {
 
 body#sales-body {
     background: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.sales-letter  p {
+    text-align: justify;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    color:#333;
+    line-height: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
