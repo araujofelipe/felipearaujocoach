@@ -242,7 +242,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 191)
+  github-pages
   jekyll-paginate
 
 BUNDLED WITH
