@@ -694,3 +694,41 @@ p>tag {
         padding-top: 340px;
     }
 }
+
+/*LINKS*/
+ul.nav {
+    margin-bottom:12px;
+    clear: both;
+    text-align: center;
+    padding-top: 20px;
+}
+ul.nav li {
+    padding: 0px;
+    position: relative;
+    margin-bottom: 12px;
+}
+ul.nav li a {
+    width: 100%;
+    text-align: center;
+    padding: 25px 20px;
+    background: #86bf9d;
+    font-weight: 900;
+    font-size: 16pt;
+    color: #fff;
+
+}
+.user-area {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+.user-area h3 {
+    font-weight: 700;
+}
+.user-img {
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+    margin-bottom:10px;
+    text-align: center;
+}
