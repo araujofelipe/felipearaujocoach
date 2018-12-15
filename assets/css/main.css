@@ -61,8 +61,12 @@ p {
     margin-bottom: 32px;
 }
 
-.destaque {
+.destaque, ul>li {
     font-weight: 900;
+}
+
+ul>li {
+    font-size: 25px;
 }
 
 .centered {
