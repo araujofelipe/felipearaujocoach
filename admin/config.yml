@@ -1,3 +1,14 @@
 backend:
-  name: felipearaujocoach
+  name: araujofelipe/felipearaujocoach
   branch: gh-pages # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+collections: 
+  - name: "pages"
+    label: "pagina"
+    folder: "/"
+    create: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+
