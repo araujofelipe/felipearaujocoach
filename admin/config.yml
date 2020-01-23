@@ -1,6 +1,8 @@
 backend:
-  name: araujofelipe/felipearaujocoach
-  branch: gh-pages # Branch to update (optional; defaults to master)
+  name: git-gateway
+  repo: araujofelipebr/felipearaujocoach # Branch to update (optional; defaults to master)
+  branch: gh-pages
+  site-domain: zen-khorana-fe1453.netfly.com
 
 publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
